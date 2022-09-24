@@ -16,4 +16,4 @@ const gallery = document.querySelector('.gallery');
 
 gallery.insertAdjacentHTML('beforeend', galleryTemplate);
 
-new SimpleLightbox('.gallery a', { captionDelay: 250 });
+new SimpleLightbox('.gallery__item', { captionDelay: 250 });
