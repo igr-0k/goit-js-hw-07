@@ -25,7 +25,7 @@ render();
 
 const onClick = e => {
   e.preventDefault();
-  if (e.target === e.currentTarget) return;
+  if (e.target.nodeName !== 'IMG') return;
   const image = e.target;
 
   const instance = basicLightbox.create(`
